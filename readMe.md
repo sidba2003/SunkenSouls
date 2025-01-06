@@ -1,3 +1,6 @@
+# To Play the Game
+The game can be played through [this link](https://asif-021.github.io/SunkenSouls/build/index.html) 
+
 # Game Controls Instructions
 ## Movement
 - Use the following keys to move your character:
