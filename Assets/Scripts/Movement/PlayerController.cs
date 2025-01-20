@@ -213,9 +213,5 @@ namespace SunkenSouls
             yield return new WaitForSeconds((float)director.duration);
             SceneManager.LoadScene(sceneIndex);
         }
-
-        
-
-        
     }
 }
