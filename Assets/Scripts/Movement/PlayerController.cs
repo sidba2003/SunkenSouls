@@ -58,9 +58,6 @@ namespace SunkenSouls
             CoinsCollectedText.instance.SetCoinsRequired(GameObject.FindGameObjectsWithTag("GoldCoin_Collectible").Length);
 
             instance = this;
-            
-            
-            
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -76,12 +73,7 @@ namespace SunkenSouls
                 case "NextLevelDoor":
                     if (CoinsCollectedText.instance.GetCoinsToCollect() == 0)
                     {
-                        
-                        
-                        StartCoroutine(LoadSceneAfterCutscene(levelFinishedCutsceneDirector, SceneManager.GetActiveScene().buildIndex + 1)); //!!!
-
-                        // StartCoroutine(LoadSceneAfterCutscene(levelFinishedCutsceneDirector, SceneManager.GetActiveScene().buildIndex - 2));
-                        // FOR TESTING^^^
+                        StartCoroutine(LoadSceneAfterCutscene(levelFinishedCutsceneDirector, SceneManager.GetActiveScene().buildIndex + 1));
                     }
                     break;
                 case "Treasure":
