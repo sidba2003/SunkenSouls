@@ -37,7 +37,5 @@ public class PauseMenuControler : MonoBehaviour
         }
 
         pauseMenuActivation = !pauseMenuActivation;
-
     }
-
 }
